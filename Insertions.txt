@@ -1,0 +1,89 @@
+INSERT INTO Hotel values (thotel (1, 'Renaissance ', 'Tlemcen', 5,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel  values (thotel (2, 'Seybouse ', 'Annaba', 3,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (3, 'Hôtel Novotel ', 'Constantine', 4,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel  values (thotel (4, 'Saint George d''Alger', 'Alger', 5,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (5, 'Ibis Alger Aéroport', 'Alger', 2,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (6, 'El Mountazah Annaba', 'Annaba', 3,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel  values (thotel (7, 'Hôtel Albert 1er', 'Alger', 3,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (8, 'Chems ', 'Oran', 2,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (9, 'Colombe ', 'Oran', 3,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (10, 'Mercure ', 'Alger', 4,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (11, 'Le Méridien ', 'Oran', 5,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+INSERT INTO Hotel values (thotel (12, 'Hôtel Sofitel ', 'Alger', 5,null,t_set_ref_Chambre(),t_set_ref_Client(),t_set_ref_Evaluation()));
+
+
+
+INSERT INTO CLIENT VALUES (tclient (1, 'BOUROUBI', 'Taous', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (2, 'BOUZIDI', 'AMEL', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (3, 'LACHEMI', 'Bouzid',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (4, 'BOUCHEMLA', 'Elias',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (5, 'HADJ', 'Zouhir',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (6, 'OUSSEDIK', 'Hakim',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (7, 'AAKOUB', 'Fatiha',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (8, 'ABAD', 'Abdelhamid', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (9, 'ABADA', 'Mohamed',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (10, 'ABAYAHIA', 'Abdelkader',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (11, 'ABBACI', 'Abdelmadjid', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (12, 'ABBAS', 'Samira',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (13, 'ABBOU', 'Mohamed',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (14, 'ABDELAZIZ', 'Ahmed',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (15, 'ABDELMOUMEN', 'Nassima',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (16, 'ABDELOUAHAB', 'OUAHIBA', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (17, 'ABDEMEZIANE', 'Madjid',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (18, 'ABERKANE', 'Aicha',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+
+INSERT INTO CLIENT VALUES (tclient (19, 'AZOUG', 'Dalila',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (20, 'BENOUADAH', 'Mohammed',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (21, 'ACHAIBOU', 'Rachid',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (22, 'ADDAD', 'Fadila',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (23, 'AGGOUN', 'Khadidja', null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (24, 'AISSAT', 'Salima',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (25, 'AMARA', 'Dahbia',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (26, 'AROUEL', 'Leila',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (27, 'BAALI', 'Souad',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (28, 'BABACI', 'Mourad',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+INSERT INTO CLIENT VALUES (tclient (29, 'BACHA', 'Nadia',  null,t_set_ref_Reservation(),t_set_ref_Evaluation(),t_set_ref_Hotel()));
+
+
+
+
+INSERT INTO chambre VALUES (tchambre(9, 2, 3, 'suite', 16000,(select ref(a) from HOTEL a where NumHotel=2),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(9, 11, 0, 'simple', 7800,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(10, 1, 1, 'simple', 7100,(select ref(a) from HOTEL a where NumHotel=1),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(10, 2, 3, 'suite', 16500,(select ref(a) from HOTEL a where NumHotel=2),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(10, 7, 1, 'simple', 3100,(select ref(a) from HOTEL a where NumHotel=7),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(10, 11, 0, 'simple', 7800,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+INSERT INTO chambre VALUES (tchambre(11, 1, 1, 'simple', 7100,(select ref(a) from HOTEL a where NumHotel=1),t_set_ref_Reservation()));
+INSERT INTO chambre VALUES (tchambre(11, 4, 1, 'simple', 8400,(select ref(a) from HOTEL a where NumHotel=4),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(11, 7, 1, 'simple', 3100,(select ref(a) from HOTEL a where NumHotel=2),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(11, 11, 0, 'simple', 7800,(select ref(a) from HOTEL a where NumHotel=7),t_set_ref_Reservation()));
+INSERT INTO chambre VALUES (tchambre(12, 1, 1, 'double', 8800,(select ref(a) from HOTEL a where NumHotel=1),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(12, 4, 1, 'simple', 8400,(select ref(a) from HOTEL a where NumHotel=4),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(12, 7, 1, 'double', 4200,(select ref(a) from HOTEL a where NumHotel=7),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(12, 11, 0, 'double', 9100,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(13, 1, 1, 'simple', 6200,(select ref(a) from HOTEL a where NumHotel=1),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(13, 4, 1, 'simple', 8600,(select ref(a) from HOTEL a where NumHotel=4),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(13, 11, 0, 'double', 9100,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+INSERT INTO chambre VALUES (tchambre(14, 4, 1, 'simple', 9000,(select ref(a) from HOTEL a where NumHotel=4),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(14, 11, 1, 'double', 9100,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+INSERT INTO chambre  VALUES (tchambre(15, 11, 1, 'double', 9100,(select ref(a) from HOTEL a where NumHotel=11),t_set_ref_Reservation()));
+
+INSERT INTO reservation VALUES (treservation(40, 9, '2022-04-11','2022-04-14',  11,(select ref(a) from Client a where NumClient=40 and rownum = 1),(select ref(a) from Chambre a where NumChambre=9 and rownum = 1),(select ref(a) from Hotel a where NumHotel=11 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(40, 8, '2022-05-01','2022-05-05',  2,(select ref(a) from Client a where NumClient=40 and rownum = 1),(select ref(a) from Chambre a where NumChambre=8 and rownum = 1),(select ref(a) from Hotel a where NumHotel=2 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(40, 23, '2022-05-09','2022-05-13', 1,(select ref(a) from Client a where NumClient=40 and rownum = 1),(select ref(a) from Chambre a where NumChambre=23 and rownum = 1),(select ref(a) from Hotel a where NumHotel=1 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(22, 25, '2022-04-04','2022-04-05',  11,(select ref(a) from Client a where NumClient=22 and rownum = 1),(select ref(a) from Chambre a where NumChambre=25 and rownum = 1),(select ref(a) from Hotel a where NumHotel=11 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(112, 1, '2022-06-07','2022-06-10',  5,(select ref(a) from Client a where NumClient=112 and rownum = 1),(select ref(a) from Chambre a where NumChambre=1 and rownum = 1),(select ref(a) from Hotel a where NumHotel=5 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(26, 25, '2022-04-22','2022-04-26',  11,(select ref(a) from Client a where NumClient=26 and rownum = 1),(select ref(a) from Chambre a where NumChambre=25 and rownum = 1),(select ref(a) from Hotel a where NumHotel=11 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(29, 1, '2022-04-04','2022-04-08',  11,(select ref(a) from Client a where NumClient=29 and rownum = 1),(select ref(a) from Chambre a where NumChambre=1 and rownum = 1),(select ref(a) from Hotel a where NumHotel=11 and rownum = 1)));
+INSERT INTO reservation VALUES (treservation(37, 302, '2022-05-10', '2022-05-12', 8,(select ref(a) from Client a where NumClient=37 and rownum = 1),(select ref(a) from Chambre a where NumChambre=302 and rownum = 1),(select ref(a) from Hotel a where NumHotel=8 and rownum = 1)));
+
+
+INSERT INTO Evaluation VALUES (tevaluation(11, 28, '2022-04-08', 3,(select ref(a) from Client a where NumClient=28),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(11, 11, '2022-05-07', 2,(select ref(a) from Client a where NumClient=11),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(11, 2, '2022-04-14', 3,(select ref(a) from Client a where NumClient=2),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(2, 17, '2022-05-05', 5,(select ref(a) from Client a where NumClient=17),(select ref(b) from Hotel b where NumHotel=2)));
+INSERT INTO Evaluation VALUES (tevaluation(1, 5, '2022-05-13', 2,(select ref(a) from Client a where NumClient=5),(select ref(b) from Hotel b where NumHotel=1)));
+INSERT INTO Evaluation VALUES (tevaluation(11, 22, '2022-04-05', 4,(select ref(a) from Client a where NumClient=22),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(11, 26, '2022-04-26', 5,(select ref(a) from Client a where NumClient=26),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(11, 23, '2022-04-08', 2,(select ref(a) from Client a where NumClient=23),(select ref(b) from Hotel b where NumHotel=11)));
+INSERT INTO Evaluation VALUES (tevaluation(8, 8, '2022-05-10', 4,(select ref(a) from Client a where NumClient=8),(select ref(b) from Hotel b where NumHotel=8)));

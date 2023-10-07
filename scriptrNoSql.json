@@ -1,0 +1,562 @@
+______________1__________
+
+1/
+{
+  "nom": "Nom de l'hôtel",
+  "num": "numéro de l'hotel",
+  "ville": "Ville de l'hôtel",
+  "étoile": "étoile de l'hôtel",
+
+  "evaluations": [
+    {
+      "num": "numéro du client",
+      "note": "Note donnée par l'auteur",
+      "date": "la date"
+    },
+    {
+        "num": "numéro du client",
+        "note": "Note donnée par l'auteur",
+        "date": "la date"
+    }
+    ]
+    {
+       
+        "reservations": [{
+            "numclient": "C001",
+            "datearrivee": "2023-06-15",
+            "datedepart": "2023-06-20",
+            "numchambre": "C001",
+            
+          }
+          ]
+      }
+      
+}
+2/
+{
+  "nom": "Renaissance",
+  "num": 1,
+  "ville": "Tlemcen",
+  "étoile": 5,
+  
+  "evaluations": [
+    {
+      "num": 1,
+      "note": 8,
+      "date": "09/05/2022"
+    },
+    {
+      "num": 2,
+      "note": 6.5,
+      "date": "01/05/2022"
+    }
+],
+ "reservations": [{
+    "numchambre": 23,
+    "numclient": 40,
+    "datearrivee": "09/05/2022",
+    "datedepart": "13/05/2022",
+    
+  }]
+}
+  ____________________________2_____
+
+ 1/ use BDA
+  2/db
+  3/db.createCollection("hotel")
+  4/db.createCollection("Hotels-NbResv")
+  5/db.createCollection("HotelsPas-cher")
+
+  6/
+db.hotel.insertMany([
+{
+  "nom": "Renaissance",
+  "num": "1",
+  "ville": "Tlemcen",
+  "étoile": "5",
+  
+  "evaluations": [
+    {
+      "num": "1",
+      "note": "8",
+      "date": "09/05/2022"
+    }
+    ],
+    "reservations": [{
+        "numchambre": "23",
+        "numclient": "40",
+        "datearrivee": "09/05/2022",
+        "datedepart": "13/05/2022"
+        
+      }]
+}
+{
+    "nom": "Seybous",
+    "num": "2",
+    "ville": "Annaba",
+    "étoile": "3",
+    
+    "evaluations":[ 
+      
+      {
+        "num": "2",
+        "note": "10",
+        "date": "01/05/2022"
+      }],
+      
+      
+    
+    "reservations": [{
+        "numchambre": "8",
+        "numclient": "40",
+        "datearrivee": "01/05/2022",
+        "datedepart": "05/05/2022"
+        
+      }]}
+{
+      "nom": "Hôtel Novotel",
+      "num": "3",
+      "ville": "Constantine",
+      "étoile": "4",
+      
+      "evaluations": [
+        {
+          "num": "3",
+          "note": "8",
+          "date": "09/05/2022"
+        }]
+        
+        
+      }
+     
+{
+        "nom": " Saint George d'Alger",
+        "num": "4",
+        "ville": "Alger",
+        "étoile": "5",
+        
+        "evaluations":[ 
+          {
+            "num": "4",
+            "note": "8",
+            "date": "12/05/2022"
+          }],
+        
+        "reservations": [{
+            "numchambre": "21",
+            "numclient": "14",
+            "datearrivee": "12/05/2022",
+            "datedepart": "13/05/2022"
+            
+          }]
+        }
+{
+          "nom": " Ibis Alger Aéroport",
+          "num": "5",
+          "ville": "Alger",
+          "étoile": "2",
+          
+          "evaluations": [
+            {
+              "num": "5",
+              "note": "8",
+              "date": "11/05/2022"
+            },
+            {
+              "num": "6",
+              "note": "6.5",
+              "date": "06/04/2022"
+            }
+            
+            
+          ],
+          "reservations": [{
+            "numchambre": "1",
+            "numclient": "1",
+            "datearrivee": "11/05/2022",
+            "datedepart": "15/05/2022"
+            
+          },
+          {
+            "numchambre": "2",
+            "numclient": "2",
+            "datearrivee": "11/04/2022",
+            "datedepart": "18/04/2022"
+            
+          },
+          {
+            "numchambre": "2",
+            "numclient": "6",
+            "datearrivee": "05/04/2022",
+            "datedepart": "06/04/2022"
+            
+          },
+          {
+            "numchambre": "1",
+            "numclient": "112",
+            "datearrivee": "07/06/2022",
+            "datedepart": "10/06/2022"
+            
+          },
+          {
+            "numchambre": "2",
+            "numclient": "35",
+            "datearrivee": "17/05/2022",
+            "datedepart": "23/05/2022"
+            
+          }]
+        }
+{
+            "nom": " El Mountazah Annaba",
+            "num": "6",
+            "ville": "Annaba",
+            "étoile": "3",
+            
+            "evaluations": [
+              {
+                "num": "7",
+                "note": "7",
+                "date": "10/05/2022"
+              },
+              {
+                "num": "8",
+                "note": "9",
+                "date": "01/05/2022"
+              },
+              {
+                "num": "9",
+                "note": "6",
+                "date": "02/06/2022"
+              }
+              
+              
+            ],
+            "reservations": [{
+                "numchambre": "2",
+                "numclient": "13",
+                "datearrivee": "02/05/2022",
+                "datedepart": "10/05/2022"
+                
+              },
+              {
+                "numchambre": "2",
+                "numclient": "14",
+                "datearrivee": "28/04/2022",
+                "datedepart": "01/05/2022"
+                
+              },
+              {
+                "numchambre": "1",
+                "numclient": "23",
+                "datearrivee": "04/05/2022",
+                "datedepart": "09/05/2022"
+                
+              },
+              {
+                "numchambre": "2",
+                "numclient": "35",
+                "datearrivee": "27/05/2022",
+                "datedepart": "02/06/2022"
+            
+              }]
+        }
+{
+              "nom": " Hôtel Albert 1er",
+              "num": "7",
+              "ville": "Alger",
+              "étoile": "3"
+              
+              
+                
+            }
+{
+                "nom": " Chems",
+                "num": "8",
+                "ville": "Oran",
+                "étoile": "2",
+                
+                "evaluations": [
+                  {
+                    "num": "10",
+                    "note": "8",
+                    "date": "30/04/2022"
+                  },
+                  {
+                    "num": "11",
+                    "note": "5",
+                    "date": "03/05/2022"
+                  }
+                  
+                  
+                ],
+                "reservations": [{
+                    "numchambre": "100",
+                    "numclient": "28",
+                    "datearrivee": "30/04/2022",
+                    "datedepart": "03/05/2022"
+                    
+                  },
+                  {
+                    "numchambre": "301",
+                    "numclient": "16",
+                    "datearrivee": "01/05/2022",
+                    "datedepart": "03/05/2022"
+                    
+                  },
+                  {
+                    "numchambre": "302",
+                    "numclient": "37",
+                    "datearrivee": "12/05/2022",
+                    "datedepart": "10/05/2022"
+                    
+                  }]
+            }
+{
+                  "nom": " Colombe",
+                  "num": "9",
+                  "ville": "Oran",
+                  "étoile": "3",
+                  
+                  "evaluations": 
+                    {
+                      "num": "12",
+                      "note": "8",
+                      "date": "14/04/2022"
+                    }
+                  ,
+                  "reservations": [{
+                    "numchambre": "3",
+                    "numclient": "28",
+                    "datearrivee": "13/04/2022",
+                    "datedepart": "14/04/2022"
+                    
+                  },
+                  {
+                    "numchambre": "2",
+                    "numclient": "20",
+                    "datearrivee": "03/05/2022",
+                    "datedepart": "20/05/2022"
+                    
+                  },
+                  {
+                    "numchambre": "3",
+                    "numclient": "15",
+                    "datearrivee": "15/04/2022",
+                    "datedepart": "20/04/2022"
+                    
+                  }]
+                }
+{
+                    "nom": " Mercure",
+                    "num": "10",
+                    "ville": "Alger",
+                    "étoile": "4",
+                    
+                    "evaluations": 
+                      {
+                        "num": "13",
+                        "note": "10",
+                        "date": "14/06/2022"
+                      }
+                    ,
+                    "reservations": {
+                        "numchambre": "100",
+                        "numclient": "6",
+                        "datearrivee": "11/06/2022",
+                        "datedepart": "14/06/2022"
+                        
+                      }
+                      
+                }
+{
+                      "nom": " Le Méridien",
+                      "num": "11",
+                      "ville": "Oran",
+                      "étoile": "5",
+                      
+                      "evaluations": [
+                        {
+                          "num": "14",
+                          "note": "10",
+                          "date": "08/04/2022"
+                        },
+                        {
+                          "num": "15",
+                          "note": "8",
+                          "date": "12/05/2006"
+                        },
+                        {
+                          "num": "16",
+                          "note": "7.5",
+                          "date": "07/05/2022"
+                        },
+                        {
+                          "num": "17",
+                          "note": "9",
+                          "date": "05/04/2022"
+                        }
+                      ],
+                      "reservations": [{
+                        "numchambre": "8",
+                        "numclient": "12",
+                        "datearrivee": "09/05/2022",
+                        "datedepart": "10/05/2022"
+                        
+                      },
+                      {
+                        "numchambre": "9",
+                        "numclient": "3",
+                        "datearrivee": "06/04/2022",
+                        "datedepart": "08/04/2022"
+                        
+                      },
+                      {
+                        "numchambre": "7",
+                        "numclient": "7",
+                        "datearrivee": "07/05/2022",
+                        "datedepart": "12/05/2006"
+                        
+                      },
+                      {
+                        "numchambre": "20",
+                        "numclient": "47",
+                        "datearrivee": "04/04/2022",
+                        "datedepart": "08/04/2022"
+                        
+                      },
+                      {
+                        "numchambre": "5",
+                        "numclient": "44",
+                        "datearrivee": "07/04/2022",
+                        "datedepart": "07/05/2022"
+                        
+                      },
+                      {
+                        "numchambre": "9",
+                        "numclient": "40",
+                        "datearrivee": "11/04/2022",
+                        "datedepart": "14/04/2022"
+                        
+                      },
+                      {
+                        "numchambre": "825",
+                        "numclient": "22",
+                        "datearrivee": "04/04/2022",
+                        "datedepart": "05/04/2022"
+                        
+                      }]
+                    }
+{
+                        "nom": " Hôtel Sofitel",
+                        "num": "12",
+                        "ville": "Alger",
+                        "étoile": "5",
+                        
+                        "evaluations": [
+                          {
+                            "num": "18",
+                            "note": "8",
+                            "date": "04/05/2022"
+                          },
+                          {
+                            "num": "19",
+                            "note": "6.5",
+                            "date": "06/05/2022"
+                          }
+                          
+                          
+                        ],
+                        "reservations": [{
+                            "numchambre": "205",
+                            "numclient": "29",
+                            "datearrivee": "04/05/2022",
+                            "datedepart": "09/05/2022"
+                            
+                          },
+                          {
+                            "numchambre": "101",
+                            "numclient": "35",
+                            "datearrivee": "04/04/2022",
+                            "datedepart": "06/05/2022"
+                            
+                          },
+                          {
+                            "numchambre": "202",
+                            "numclient": "37",
+                            "datearrivee": "11/05/2022",
+                            "datedepart": "18/05/2022"
+                            
+                          }]
+                    }])
+
+____________________3______________________
+1/db.hotel.find({ étoiles: "3 " })
+
+2/db.reservations.aggregate([
+    {
+      $group: {
+        _id: "$nomHotel",
+        nbResv: { $sum: 1 }
+      }
+    },
+    {
+      $sort: {
+        nbResv: -1
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        nomHotel: "$_id",
+        nbResv: 1
+      }
+    },
+    {
+      $out: "Hotels-NbResv"
+    }
+  ])
+  db.Hotels-NbResv.find()
+
+3/db.hotel.find({ "Chambre.prixChambre": { $lte: 6000 } }, { _id: 0, nom: 1, adresse: 1, chambres: { $elemMatch: { prix: { $lte: 6000 } } } }).toArray()
+db.HotelsPas-cher.insertMany(<résultats de la requête>)
+4/db.hotel.find({ "Evaluations.note": { $gte: 5 } }, { _id: 0, nom: 1 })
+
+
+5/db.hotel.find({ "reservations.email": "email_du_client" }, { _id: 0, nom: 1, "chambres.numero": 1, "reservations.date_arrivee": 1 })
+
+6/db.hotel.aggregate([
+    { $unwind: "$evaluations" },
+    { $match: { "evaluations.email": "email_du_client" } },
+    { $project: { _id: 0, nom: 1, "evaluations.date": 1, "evaluations.note": 1 } }
+  ])
+  
+7/db.hotel.updateMany(
+{ etoile: "5 " },
+{ $inc: { "chambres.$[].prix": 2000 } }
+)
+
+8/// Fonction Map : on émet une paire clé-valeur pour chaque réservation avec le nom de l'hôtel comme clé et la valeur 1.
+var mapFunction = function() {
+    emit(this.nom, 1);
+};
+
+// Fonction Reduce : on additionne toutes les valeurs associées à chaque clé.
+var reduceFunction = function(key, values) {
+    return Array.sum(values);
+};
+
+// On exécute la requête Map-Reduce sur la collection "reservations" en utilisant les fonctions mapFunction et reduceFunction.
+db.reservations.mapReduce(
+    mapFunction,
+    reduceFunction,
+    {
+        // On spécifie le nom de la collection de sortie et le tri par ordre décroissant de la valeur.
+        out: { "reduce": "Hotels-NbResv" },
+        sort: { value: -1 }
+    }
+);
+
+// On affiche le contenu de la collection "Hotels-NbResv".
+db.getCollection("Hotels-NbResv").find();
+
+
